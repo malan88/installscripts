@@ -1,3 +1,6 @@
+#!/bin/bash
+set -o errexit
+
 echo "Updating mirrorlist..."
 pacman -Syy
 pacman -S reflector

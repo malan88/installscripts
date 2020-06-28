@@ -1,4 +1,9 @@
 #!/bin/bash
+set -o errexit
+
+if [ ! -f /mnt/id_rsa ]; then
+    echo "You need to mount the install flash drive before running this script."
+fi
 
 echo "Installing yay..."
 git clone https://aur.archlinux.org/yay.git

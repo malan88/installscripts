@@ -1,4 +1,6 @@
 #!/bin/bash
+set -o errexit
+
 if [[ -z "$hostname" ]]
 then
     echo "Need hostname=<hostname> before execution"
